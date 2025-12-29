@@ -57,11 +57,15 @@ class OsDetector implements DetectorInterface
         // Check for Opera Mini
         if (stripos($userAgent->getUserAgentString(), 'opera mini') !== false) {
             $os->setIsMobile(true);
+            return true;
         } // Set is mobile for Pocket IE
         elseif (stripos($userAgent->getUserAgentString(), 'mspie') !== false ||
             stripos($userAgent->getUserAgentString(), 'pocket') !== false) {
             $os->setIsMobile(true);
+            return true;
         }
+        
+        return false;
     }
 
     /**

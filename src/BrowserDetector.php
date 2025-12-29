@@ -75,11 +75,11 @@ class BrowserDetector implements DetectorInterface
      * Routine to determine the browser type.
      *
      * @param Browser $browser
-     * @param UserAgent $userAgent
+     * @param UserAgent|null $userAgent
      *
      * @return bool
      */
-    public static function detect(Browser $browser, UserAgent $userAgent = null)
+    public static function detect(Browser $browser, ?UserAgent $userAgent = null)
     {
         self::$browser = $browser;
         if (is_null($userAgent)) {
