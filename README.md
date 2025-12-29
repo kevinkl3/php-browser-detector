@@ -1,6 +1,8 @@
 Browser Detector
 ================
 
+> **Note:** This is a fork of the original repository [sinergi/php-browser-detector](https://github.com/sinergi/php-browser-detector) with added PHP 8.4+ support.
+
 [![Build Status](https://travis-ci.org/sinergi/php-browser-detector.svg?branch=master)](https://travis-ci.org/sinergi/php-browser-detector)
 [![StyleCI](https://styleci.io/repos/3752453/shield?style=flat)](https://styleci.io/repos/3752453)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sinergi/php-browser-detector/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sinergi/php-browser-detector/?branch=master)
@@ -16,14 +18,14 @@ reliable and evolves at all time, use with care and feel free to contribute.
 
 ## Requirements
 
-This library uses PHP 5.3+.
+This library uses PHP 5.3+. This fork adds support for PHP 8.4+.
 
 ## Install
 
 It is recommended that you install the PHP Browser library [through composer](http://getcomposer.org). To do so, run the following command:
 
 ```sh
-composer require sinergi/browser-detector
+composer require kevinkl3/browser-detector
 ```
 
 ## Browser Detection
